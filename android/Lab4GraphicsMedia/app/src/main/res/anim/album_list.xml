@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  程序3 帧动画的资源文件：animation-list
+  oneshot="false" 表示循环播放；每帧 duration="1000" 毫秒（1 秒）
+  共 10 帧：p01.png ~ p10.png
+-->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item android:drawable="@drawable/p01" android:duration="1000" />
+    <item android:drawable="@drawable/p02" android:duration="1000" />
+    <item android:drawable="@drawable/p03" android:duration="1000" />
+    <item android:drawable="@drawable/p04" android:duration="1000" />
+    <item android:drawable="@drawable/p05" android:duration="1000" />
+    <item android:drawable="@drawable/p06" android:duration="1000" />
+    <item android:drawable="@drawable/p07" android:duration="1000" />
+    <item android:drawable="@drawable/p08" android:duration="1000" />
+    <item android:drawable="@drawable/p09" android:duration="1000" />
+    <item android:drawable="@drawable/p10" android:duration="1000" />
+
+</animation-list>

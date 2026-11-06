@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Material.Light.DarkActionBar">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 程序1 Canvas 绘图 -->
+        <activity android:name=".PaintCanvasActivity" android:exported="true" />
+        <!-- 程序2 Matrix 图像变换 -->
+        <activity android:name=".MatrixActivity" android:exported="true" />
+        <!-- 程序3 帧动画 -->
+        <activity android:name=".FrameAnimActivity" android:exported="true" />
+        <!-- 程序4 补间动画 -->
+        <activity android:name=".TweenAnimActivity" android:exported="true" />
+        <!-- 程序5 SoundPool 音效 -->
+        <activity android:name=".SoundPoolActivity" android:exported="true" />
+        <!-- 程序6 MediaPlayer 音频 -->
+        <activity android:name=".AudioPlayerActivity" android:exported="true" />
+        <!-- 程序7 MediaPlayer + SurfaceView 视频 -->
+        <activity android:name=".VideoPlayerActivity" android:exported="true" />
+
+    </application>
+
+</manifest>

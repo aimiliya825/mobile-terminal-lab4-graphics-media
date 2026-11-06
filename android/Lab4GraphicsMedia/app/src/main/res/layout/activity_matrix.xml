@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="程序2  Matrix图像变换（原图 + 平移/旋转/缩放/扭曲）"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#1565C0" />
+
+    <com.example.graphicsmedia.MatrixView
+        android:id="@+id/matrixView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

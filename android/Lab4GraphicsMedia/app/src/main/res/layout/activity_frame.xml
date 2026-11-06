@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="程序3  帧动画（animation-list 逐帧播放相册）"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#1565C0" />
+
+    <TextView
+        android:id="@+id/tvFrameState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="共 10 帧，每帧 1000ms，oneshot=false 循环播放"
+        android:textSize="13sp"
+        android:textColor="#666666" />
+
+    <ImageView
+        android:id="@+id/ivFrame"
+        android:layout_width="320dp"
+        android:layout_height="243dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:background="#EEEEEE" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnFrameStart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="开始播放" />
+
+        <Button
+            android:id="@+id/btnFrameStop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="停止播放" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="说明：animation-list 中的 drawable 依次为 p01.png~p10.png（每帧 1000ms、循环播放），ImageView 以该动画资源为背景，通过 (AnimationDrawable) getBackground() 取得动画对象后调用 start()/stop()。"
+        android:textSize="12sp"
+        android:textColor="#888888" />
+
+</LinearLayout>

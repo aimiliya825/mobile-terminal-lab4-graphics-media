@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="程序4  补间动画（透明度 / 缩放 / 平移 / 旋转 / 组合）"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#1565C0" />
+
+    <TextView
+        android:id="@+id/tvTweenState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="点击下方按钮播放对应的补间动画"
+        android:textSize="13sp"
+        android:textColor="#666666" />
+
+    <ImageView
+        android:id="@+id/ivTween"
+        android:layout_width="200dp"
+        android:layout_height="233dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#F5F5F5"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bigandroid" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAlpha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="透明度" />
+
+        <Button
+            android:id="@+id/btnScale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="缩放" />
+
+        <Button
+            android:id="@+id/btnTranslate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="平移" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRotate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="旋转" />
+
+        <Button
+            android:id="@+id/btnCombo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="组合动画" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="说明：动画资源位于 res/anim 目录，AnimationUtils.loadAnimation() 加载 XML 动画，View.startAnimation() 启动，单个动画持续 2000ms；组合动画按指导书参数（alpha 5000ms、scale 9000ms、translate 10000ms、rotate 10000ms）播放。"
+        android:textSize="12sp"
+        android:textColor="#888888" />
+
+</LinearLayout>

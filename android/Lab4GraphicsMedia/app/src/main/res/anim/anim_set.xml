@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  程序4 组合补间动画：透明度 + 缩放 + 平移 + 旋转 四种动画同时播放
+  alpha     : 0.0 → 1.0，5000ms
+  scale     : 0.0 → 1.0，9000ms，加速减速插值器，以图片中心为轴
+  translate : (30,30) → (0,0)，10000ms
+  rotate    : 0° → +360°，10000ms，加速减速插值器，以图片中心为轴
+-->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 透明度的变换 -->
+    <alpha
+        android:duration="5000"
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0" />
+
+    <!-- 尺寸的变换，interpolator 表示变换的速度变化模式 -->
+    <scale
+        android:duration="9000"
+        android:fillAfter="false"
+        android:fromXScale="0.0"
+        android:fromYScale="0.0"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="1.0"
+        android:toYScale="1.0" />
+
+    <!-- 位置的变换 -->
+    <translate
+        android:duration="10000"
+        android:fromXDelta="30"
+        android:fromYDelta="30"
+        android:toXDelta="0"
+        android:toYDelta="0" />
+
+    <!-- 旋转变换 -->
+    <rotate
+        android:duration="10000"
+        android:fromDegrees="0"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toDegrees="+360" />
+
+</set>

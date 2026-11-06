@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="移动终端软件开发 · 实验四"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#1565C0" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="图形图像和多媒体技术    胡俊峰  202402323"
+        android:textSize="13sp"
+        android:textColor="#666666" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#DDDDDD" />
+
+    <Button
+        android:id="@+id/btnPaint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+            android:text="程序1  Paint与Canvas绘图" />
+
+    <Button
+        android:id="@+id/btnMatrix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+            android:text="程序2  Matrix图像变换" />
+
+    <Button
+        android:id="@+id/btnFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+            android:text="程序3  帧动画" />
+
+    <Button
+        android:id="@+id/btnTween"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+            android:text="程序4  补间动画" />
+
+    <Button
+        android:id="@+id/btnSound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+            android:text="程序5  SoundPool音效播放" />
+
+    <Button
+        android:id="@+id/btnAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+            android:text="程序6  MediaPlayer音频播放" />
+
+    <Button
+        android:id="@+id/btnVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+            android:text="程序7  MediaPlayer+SurfaceView视频播放" />
+
+</GridLayout>
